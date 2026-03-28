@@ -1,0 +1,26 @@
+<form [formGroup]="postForm" (ngSubmit)="onPostAdd()">
+  <div class="card">
+    <div class="card-body">
+      <div class="form-group">
+        <input
+          formControlName="title"
+          type="text"
+          #title
+          class="form-control"
+        />
+      </div>
+
+      <div class="form-group">
+        <textarea
+          rows="4"
+          formControlName="content"
+          type="text"
+          #content
+          class="form-control"
+        ></textarea>
+      </div>
+
+      <button class="btn btn-sm btn-block btn-primary">Add Post</button>
+    </div>
+  </div>
+</form>

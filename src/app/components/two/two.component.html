@@ -1,0 +1,14 @@
+
+<ul class="list-group">
+    <li 
+    *ngFor="let post of postsArr"
+    class="list-group-item d-flex justify-content-between">
+        <strong>
+            {{post.title}}
+        </strong>
+        <div>
+            <button class="btn btn-sm btn-outline-primary mr-2">Edit</button>
+            <button class="btn btn-sm btn-outline-danger">Remove</button>
+        </div>
+    </li>
+</ul>
