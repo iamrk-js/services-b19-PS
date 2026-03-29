@@ -5,7 +5,8 @@ import { PostsService } from 'src/app/services/post.services'
 @Component({
   selector: 'app-two',
   templateUrl: './two.component.html',
-  styleUrls: ['./two.component.scss']
+  styleUrls: ['./two.component.scss'],
+  // providers : [PostsService]
 })
 export class TwoComponent implements OnInit {
   postsArr: Ipost[] = []
